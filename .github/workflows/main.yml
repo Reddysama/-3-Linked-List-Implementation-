@@ -1,0 +1,18 @@
+void SM::readElements(); 
+/ Initiate linkedList array cout "Please observe the element sequence while entering data for the matrix. 
+" << endl; cout << " "The order is as follows: nrow >> column >> value " "<< endl; int row=1, column=1, value=1; 
+\s int count = 1; \s do{ \s cout << "Data (" << count << ") >> "; \s cin >> row; \s cin >> column; 
+\s cin >> value; if (row == 0 && column == 0 && value == 0) \s break;
+/ Display error message if the input index of row is bigger than the size of row if (row >= n) cout "
+"nInvalid data discovered! nThe maximum number of rows permitted is " n "! Please provide a valid row number! \n "
+<< endl; } / Otherwise, if the input column index is bigger than the column's size, display an error message if
+(column >= m) cout " "nInvalid data detected! nThe maximum number of columns permitted is " m "! 
+Please input a correct column count! \n "<< endl; } / Else the data is inserted into the linkedList 
+{ \s count++; \s linkedList[row]. insertItemAt(column, value); } while ((row!= 0 and column!= 0 and value!= 0));
+cout << endl; }
+
+void SM::printMatrix() / Iterate over each row of the matrix for (int I = 0; I n; i++).
+
+/ Set the width of the field to 7
+
+cout setw(7); NodeType = linkedList[i].head; / Iterate across the columns of the matrix using (int j = 0; j m; j++). / Determine whether the linkedList is empty, / If the linkedList is not empty, examine its nodes if (current!= NULL). / Determine whether the column of the node matches the current column index. / If true, output the node's matrix information if (current->column == j) cout current->info setw(7) ; current = current->next; / If not, then print 0 otherwise cout "0" setw(7); / Otherwise, if it is empty, print 0. cout "0" setw(7); cout endl; cout
